@@ -1,14 +1,13 @@
 <section class="twimp">
 
 	<div class="twimp_header">
-		<img class="twimp_header_img" src="assets/images/google-icon.png" alt="Imagen de un twimp">
-		<a class="twimp_header_name" href="www.therewego.com" target="_b">by David</a>
-		<div class="twimp_header_date">Published on 24/11/2016</div>
+		<img class="twimp_header_img" [src]="twimp._author._image" alt="Imagen de un twimp">
+		<a class="twimp_header_name" [href]="twimp._author._url" target="_b">by {{twimp._author._fullName}}</a>
+		<div class="twimp_header_date">Published on {{twimp._timestamp}}</div>
 	</div>
 
 	<div class="twimp_content">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur sodales libero, sit amet posuere arcu consectetur
-		ut. Nam volutpat ligula ac nunc consectetur vestibulum.
+	{{twimp._content}}
 	</div>
 
 	<hr class="twimp_line">
